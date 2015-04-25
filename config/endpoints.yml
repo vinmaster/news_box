@@ -1,0 +1,10 @@
+production:
+  hacker_news:
+    base_url: https://hacker-news.firebaseio.com/v0
+    top_stories_url: https://hacker-news.firebaseio.com/v0/topstories.json
+    item_url: https://hacker-news.firebaseio.com/v0/item/%s.json?print=pretty
+testing:
+  hacker_news:
+    base_url: https://hacker-news.firebaseio.com/v0
+    top_stories_url: https://hacker-news.firebaseio.com/v0/topstories.json
+    item_url: https://hacker-news.firebaseio.com/v0/item/%s.json?print=pretty'

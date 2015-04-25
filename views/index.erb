@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <%= partial :head %>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <h1>News Box</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">Top News Just For You</div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @articles.each_with_index do |a, index| %>
+                <tr>
+                  <td><%= index %></td>
+                  <td><%= a.title %></td>
+                  <td><a href="<%= a.url %>" class="btn btn-primary" type="button" target="_blank">Open</a></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
